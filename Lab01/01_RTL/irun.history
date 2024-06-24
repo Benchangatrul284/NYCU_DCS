@@ -1,0 +1,4 @@
+s1(03Mar2024:14:19:27):  irun TESTBED.sv -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s2(16Mar2024:23:45:02):  irun TESTBED.sv -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s3(16Mar2024:23:46:17):  irun TESTBED.sv -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s4(27Mar2024:23:15:01):  irun TESTBED.sv -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 

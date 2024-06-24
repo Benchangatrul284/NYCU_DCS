@@ -1,0 +1,21 @@
+ 
+****************************************
+Report : clocks
+Design : CDC
+Version: T-2022.03
+Date   : Thu May 16 16:36:44 2024
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk_1           14.10   {0 7.05}            d f       {clk_1}
+clk_2            2.50   {0 1.25}            d f       {clk_2}
+--------------------------------------------------------------------------------
+1

@@ -1,0 +1,1 @@
+s1(28Mar2024:20:27:42):  irun TESTBED.sv -define RTL -debug -notimingchecks -loadpli1 debpli:novas_pli_boot 

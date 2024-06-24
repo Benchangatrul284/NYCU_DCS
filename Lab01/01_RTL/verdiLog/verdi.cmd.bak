@@ -1,0 +1,228 @@
+verdiWindowResize -win $_Verdi_1 "8" "31" "1280" "697"
+verdiWindowResize -win $_Verdi_1 "8" "35" "1280" "693"
+verdiWindowResize -win $_Verdi_1 "0" "23" "1280" "649"
+debImport "/RAID2/COURSE/dcs/dcs037/Lab01/01_RTL/Comb.sv" \
+          "/RAID2/COURSE/dcs/dcs037/Lab01/01_RTL/PATTERN.sv" \
+          "/RAID2/COURSE/dcs/dcs037/Lab01/01_RTL/TESTBED.sv" "-sv" -path \
+          {/RAID2/COURSE/dcs/dcs037/Lab01/01_RTL}
+srcDeselectAll -win $_nTrace1
+nsMsgSelect -range {0-0}
+wvCreateWindow
+srcDeselectAll -win $_nTrace1
+schCreateWindow -delim "." -win $_nSchema1 -scope "TESTBED"
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 {/RAID2/COURSE/dcs/dcs037/Lab01/01_RTL/Comb.fsdb}
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+verdiDockWidgetRestore -dock windowDock_nWave_2
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+verdiDockWidgetRestore -dock windowDock_nWave_2
+schSelect -win $_nSchema3 -inst "I_Comb"
+wvAddSignal -win $_nWave2 "/TESTBED/out_num1\[4:0\]" "/TESTBED/out_num0\[4:0\]" \
+           "/TESTBED/in_num3\[3:0\]" "/TESTBED/in_num2\[3:0\]" \
+           "/TESTBED/in_num1\[3:0\]" "/TESTBED/in_num0\[3:0\]"
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvSetPosition -win $_nWave2 {("G1" 6)}
+wvSetPosition -win $_nWave2 {("G1" 6)}
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+verdiDockWidgetRestore -dock windowDock_nWave_2
+srcHBSelect "TESTBED.I_Comb" -win $_nTrace1
+verdiDockWidgetSetCurTab -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "TESTBED.I_Comb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "TESTBED.I_Comb" -delim "."
+srcHBSelect "TESTBED.I_Comb" -win $_nTrace1
+srcSetOptions -win $_nTrace1 -annotate on
+schSetOptions -win $_nSchema1 -annotate on
+verdiDockWidgetMaximize -dock windowDock_nWave_2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvSetMarker -win $_nWave2 -keepViewRange -name "M1" 60000.000000 ID_GREEN5 \
+           long_dashed
+verdiDockWidgetRestore -dock windowDock_nWave_2
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollUp -win $_nWave2 1
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 0
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+wvScrollDown -win $_nWave2 1
+srcDeselectAll -win $_nTrace1
+srcSetOptions -win $_nTrace1 -annotate off
+schSetOptions -win $_nSchema1 -annotate off
+srcSetOptions -win $_nTrace1 -annotate on
+schSetOptions -win $_nSchema1 -annotate on
+wvSelectGroup -win $_nWave2 {G1}
+wvSetMarker -win $_nWave2 -keepViewRange -name "M2" 23856.727977
+wvSetMarker -win $_nWave2 -keepViewRange -name "M2" 23856.727977
+wvSetWindowTimeUnit -win $_nWave2 1.000000 ns
+wvSetWindowTimeUnit -win $_nWave2 1.000000 ns
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "in_num0" -line 3 -pos 1 -win $_nTrace1
+srcSetOptions -win $_nTrace1 -annotate off
+schSetOptions -win $_nSchema1 -annotate off
+wvSetCursor -win $_nWave2 59.641820
+wvGoToTime -win $_nWave2 60
+srcDeselectAll -win $_nTrace1
+srcSetOptions -win $_nTrace1 -annotate on
+schSetOptions -win $_nSchema1 -annotate on
+wvGoToTime -win $_nWave2 100
+srcSetOptions -win $_nTrace1 -annotate off
+schSetOptions -win $_nSchema1 -annotate off
+verdiDockWidgetHide -dock windowDock_nWave_2
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {34 34 3 4 1 1}
+srcTraceLoad "TESTBED.I_Comb.out_num1\[4:0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {33 33 1 3 1 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num0" -line 33 -pos 1 -win $_nTrace1
+srcActiveTrace "TESTBED.I_Comb.out_num0\[4:0\]" -win $_nTrace1
+srcActiveTrace "TESTBED.I_Comb.out_num0\[4:0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {34 34 3 4 1 1}
+srcActiveTrace "TESTBED.I_Comb.out_num1\[4:0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num0" -line 33 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num0" -line 33 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num0" -line 33 -pos 1 -win $_nTrace1
+srcActiveTrace "TESTBED.I_Comb.out_num0\[4:0\]" -win $_nTrace1
+srcActiveTrace "TESTBED.I_Comb.out_num0\[4:0\]" -win $_nTrace1
+srcTraceLoad "TESTBED.I_Comb.out_num0\[4:0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "in_num1" -line 26 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_and" -line 20 -pos 1 -win $_nTrace1
+srcActiveTrace "TESTBED.I_Comb.num_and\[3:0\]" -win $_nTrace1
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num0" -line 33 -pos 1 -win $_nTrace1
+srcAction -pos 32 2 5 -win $_nTrace1 -name "out_num0" -ctrlKey off
+srcActiveTrace "TESTBED.I_Comb.out_num0\[4:0\]" -win $_nTrace1
+nsMsgCollapseItem -tab trace -index {3}
+nsMsgExpandItem -tab trace -index {3}
+nsMsgCollapseItem -tab trace -index {1}
+nsMsgClearMsg -selected
+nsMsgCollapseItem -tab trace -index {3}
+nsMsgClearMsg -tab trace
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num0" -line 33 -pos 1 -win $_nTrace1
+srcActiveTrace "TESTBED.I_Comb.out_num0\[4:0\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -all -win $_nTrace1
+srcSelect -win $_nTrace1 -range {1 37 1 2 1 1}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {3 6 2 2 1 7}
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "in_num0" -line 3 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "in_num1" -line 4 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "in_num0" -line 3 -pos 1 -win $_nTrace1
+srcSelect -win $_nTrace1 -range {3 4 2 2 6 5}
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "in_num0" -line 3 -pos 1 -win $_nTrace1
+srcSelect -signal "in_num1" -line 4 -pos 1 -win $_nTrace1
+srcSelect -signal "in_num2" -line 5 -pos 1 -win $_nTrace1
+srcSelect -signal "in_num3" -line 6 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_xnor" -line 25 -pos 1 -win $_nTrace1
+srcSelect -signal "num_or" -line 26 -pos 1 -win $_nTrace1
+srcSelect -signal "num_and" -line 27 -pos 1 -win $_nTrace1
+srcSelect -signal "num_xor" -line 28 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "in_num0" -line 25 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_xnor" -line 25 -pos 1 -win $_nTrace1
+srcAction -pos 24 2 5 -win $_nTrace1 -name "num_xnor" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_or" -line 26 -pos 1 -win $_nTrace1
+srcAction -pos 25 2 2 -win $_nTrace1 -name "num_or" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_and" -line 27 -pos 1 -win $_nTrace1
+srcAction -pos 26 2 2 -win $_nTrace1 -name "num_and" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_xor" -line 28 -pos 1 -win $_nTrace1
+srcAction -pos 27 2 1 -win $_nTrace1 -name "num_xor" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_add1" -line 30 -pos 1 -win $_nTrace1
+srcAction -pos 29 2 5 -win $_nTrace1 -name "num_add1" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "num_add2" -line 31 -pos 1 -win $_nTrace1
+srcAction -pos 30 2 4 -win $_nTrace1 -name "num_add2" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num0" -line 33 -pos 1 -win $_nTrace1
+srcAction -pos 32 2 5 -win $_nTrace1 -name "out_num0" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num1" -line 34 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num1" -line 34 -pos 1 -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "out_num1" -line 34 -pos 1 -win $_nTrace1
+srcAction -pos 33 2 5 -win $_nTrace1 -name "out_num1" -ctrlKey off
+verdiDockWidgetHide -dock windowDock_OneSearch
+verdiDockWidgetMaximize -dock widgetDock_<Message>
+verdiDockWidgetHide -dock widgetDock_<Message>
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+schSelect -win $_nSchema3 -inst "I_Comb"
+schSelect -win $_nSchema3 -inst "I_Comb"
+schPushViewIn -win $_nSchema3
+schSelect -win $_nSchema3 -inst "Comb_1:SigOp4:30:30:Combo"
+schPushViewIn -win $_nSchema3
+srcSelect -win $_nTrace1 -range {30 30 1 13 1 1}
+verdiDockWidgetHide -dock windowDock_nSchema_3
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+verdiDockWidgetHide -dock widgetDock_<Inst._Tree>
+verdiDockWidgetHide -dock widgetDock_<Decl._Tree>
+verdiHideBanners -win $_Verdi_1 -on
+verdiWindowResize -win $_Verdi_1 "9" "32" "1262" "631"
+verdiShowWindow -win $_Verdi_1 -switchFS
+verdiWindowResize -win $_Verdi_1 "9" "32" "1262" "631"
+wvCreateWindow
+wvSetPosition -win $_nWave4 {("G1" 0)}
+wvOpenFile -win $_nWave4 {/RAID2/COURSE/dcs/dcs037/Lab01/01_RTL/Comb.fsdb}
+schCreateWindow -delim "." -win $_nSchema1 -scope "TESTBED.I_Comb"
+schLastView -win $_nSchema5
+schLastView -win $_nSchema5
+schPopViewUp -win $_nSchema5
+wvAddSignal -win $_nWave4 "/TESTBED/out_num1\[4:0\]" "/TESTBED/out_num0\[4:0\]" \
+           "/TESTBED/in_num3\[3:0\]" "/TESTBED/in_num2\[3:0\]" \
+           "/TESTBED/in_num1\[3:0\]" "/TESTBED/in_num0\[3:0\]"
+wvSetPosition -win $_nWave4 {("G1" 0)}
+wvSetPosition -win $_nWave4 {("G1" 6)}
+wvSetPosition -win $_nWave4 {("G1" 6)}
+wvSetWindowTimeUnit -win $_nWave4 1.000000 ns
+wvSearchPrev -win $_nWave4
+wvSearchPrev -win $_nWave4
+wvSearchPrev -win $_nWave4
+wvSearchPrev -win $_nWave4
+wvSearchPrev -win $_nWave4
+wvSearchPrev -win $_nWave4
+wvSearchPrev -win $_nWave4
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4
+wvZoomOut -win $_nWave4

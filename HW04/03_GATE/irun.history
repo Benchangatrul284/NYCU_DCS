@@ -1,0 +1,12 @@
+s1(28Apr2024:00:50:30):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s2(28Apr2024:01:10:49):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s3(28Apr2024:01:15:55):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s4(28Apr2024:01:16:24):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s5(28Apr2024:23:19:09):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s6(28Apr2024:23:50:53):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s7(29Apr2024:00:03:53):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s8(29Apr2024:00:13:10):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s9(29Apr2024:00:21:25):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s10(29Apr2024:10:45:10):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s11(29Apr2024:21:00:20):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 
+s12(05May2024:01:03:25):  irun -timescale 1ns/1fs -override_precision -sdf_precision 1fs TESTBED.sv -define GATE -debug -v /usr/cad/umc018/Verilog/umc18_neg.v -nontcglitch -loadpli1 debpli:novas_pli_boot 

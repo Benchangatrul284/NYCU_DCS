@@ -1,0 +1,10 @@
+rm -rf INCA_libs nWaveLog
+rm -rf *.fsdb
+rm -rf *.log
+rm -rf *~
+rm -rf dwsvf*
+rm -rf default.svf
+rm ./Netlist/CDC_SYN.sdc
+rm ./Netlist/CDC_SYN.sdf
+rm ./Netlist/CDC_SYN.v
+rm ./Netlist/CDC_SYN_pt.sdf

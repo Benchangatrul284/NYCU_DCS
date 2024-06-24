@@ -1,0 +1,10 @@
+s1(16May2024:00:00:52):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s2(16May2024:00:02:10):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s3(16May2024:00:02:42):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s4(16May2024:00:03:20):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s5(16May2024:00:03:46):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s6(16May2024:00:03:53):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s7(16May2024:00:04:09):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s8(16May2024:00:13:35):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s9(16May2024:16:36:21):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
+s10(24Jun2024:10:20:33):  irun TESTBED.sv -define RTL -debug +incdir+/usr/synthesis/dw/sim_ver -notimingchecks -loadpli1 debpli:novas_pli_boot 
